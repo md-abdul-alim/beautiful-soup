@@ -32,20 +32,28 @@ for index, item in enumerate(items):
 	prices.append(price)
 	descriptions.append(description)
 	reviews.append(review)
-	print(name)
-	print('https://webscraper.io' + item_url)
-	print(price)
-	print(description)
-	print(review)
-	print("__________________________________________")
+	# print(name)
+	# print('https://webscraper.io' + item_url)
+	# print(price)
+	# print(description)
+	# print(review)
+	# print("__________________________________________")
 
 df = pd.DataFrame({'Product Name': names, 'URL': item_urls,
 					'Price': prices, 'Review': reviews, 'Description': descriptions })
 
-df.to_csv("prducts_details.csv")
-df.to_excel("prducts_details.xlsx")
-## Lession 2 - Use of Regex
+# df.to_csv("prducts_details.csv")
+# df.to_excel("prducts_details.xlsx")
+
+# Lession 2 - Navbar access
+nav = soup.find('li', class_ = 'active')
+category = nav.find('a', class_ = 'category-link').text
+print(category)
+subcategory = nav.find('a', class_ = 'subcategory-link active').text
+print(subcategory)
+
+## Lession 3 - Use of Regex
 regex_data = soup.find_all(string = re.compile("Galaxy"))
-print(regex_data)
+# print(regex_data)
 
 ## Lession 3
