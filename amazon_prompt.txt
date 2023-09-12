@@ -1,0 +1,25 @@
+div class="s-card-container s-overflow-hidden aok-relative puis-include-content-margin puis puis-vqcnlkgcd4sr22kxlmcindh6i0 s-latency-cf-section s-card-border"
+name = span class="a-size-medium a-color-base a-text-normal"
+price = span class="a-price-whole"
+review = span class="a-size-base s-underline-text"
+
+
+with python,
+read file amazon.html and parse it with BeautifulSoup
+
+find all
+
+div with class="s-card-container s-overflow-hidden aok-relative puis-include-content-margin puis puis-vqcnlkgcd4sr22kxlmcindh6i0 s-latency-cf-section s-card-border"
+
+for all the divs
+
+try find span class="a-size-medium a-color-base a-text-normal" and store it to Product_Name
+except Product_Name = ""
+
+try find span class="a-price-whole" and store it to Product_Price
+except Product_Price = ""
+
+try find span class="a-size-base s-underline-text" and store it Product_Reviews
+except Product_Reviews = ""
+
+open an excel file and write Product_Name, Product_Price and Product_Reviews
