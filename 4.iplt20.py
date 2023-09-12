@@ -33,6 +33,6 @@ for item in table_data:
 	lenght = len(df)
 	df.loc[lenght] = row
 
-
-df.to_csv("IPL_action.csv")
-df.to_excel("IPL_action.xlsx")
+print(df)
+# df.to_csv("IPL_action.csv")
+# df.to_excel("IPL_action.xlsx")

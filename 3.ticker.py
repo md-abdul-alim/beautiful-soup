@@ -29,5 +29,5 @@ for item in table_data:
 	lenght = len(df)
 	df.loc[lenght] = row
 
-
-// df.to_csv("table_data.csv")
+print(df)
+#df.to_csv("table_data.csv")

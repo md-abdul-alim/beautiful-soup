@@ -51,5 +51,5 @@ df = pd.DataFrame({'Product Name': names, 'Price': prices,
 				 'Rating': ratings, 'Description': descriptions, 'URL': urls })
 
 print(df)
-df.to_csv("prducts_details.csv")
-df.to_excel("prducts_details.xlsx")
+# df.to_csv("prducts_details.csv")
+# df.to_excel("prducts_details.xlsx")

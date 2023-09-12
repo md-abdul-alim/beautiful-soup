@@ -42,6 +42,7 @@ for index, item in enumerate(items):
 df = pd.DataFrame({'Product Name': names, 'URL': item_urls,
 					'Price': prices, 'Review': reviews, 'Description': descriptions })
 
+print(df)
 # df.to_csv("prducts_details.csv")
 # df.to_excel("prducts_details.xlsx")
 
